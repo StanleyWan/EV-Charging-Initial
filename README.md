@@ -11,7 +11,7 @@ Here is the link of the Jupyter Notebook: [ev_charging_V1.ipynb](https://github.
 ## 1. Data Understanding
 The dataset used in this project is [Global_EV_Charging_Behavior_2024.csv](https://github.com/StanleyWan/EV-Charging-Initial/blob/main/data/Global_EV_Charging_Behavior_2024.csv) downloaded from Kaggle.  It contains 800 rows and 18 Columns, providing a comprehesive and realistic view of EV charging usage and trends across different regions worldwide. 
 
-The Dataset was chosen to replace the previoius proposed dataset[electric-vehicle-charging-patterns](https://www.kaggle.com/datasets/valakhorasani/electric-vehicle-charging-patterns). After a deeper analysis, the earlier dataset was found to be less realistic, making Global_EV_Charging_Behavior2024 a more suitable choice for the capstone project.
+The Dataset was chosen to replace the previoius proposed dataset [electric-vehicle-charging-patterns](https://www.kaggle.com/datasets/valakhorasani/electric-vehicle-charging-patterns). After a deeper analysis, the earlier dataset was found to be less realistic, making Global_EV_Charging_Behavior2024 a more suitable choice for the capstone project.
 
 ### Key Characteristics of the Dataset  
 - **Size:** ~800 sessions × 16 attributes  
