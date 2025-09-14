@@ -46,11 +46,11 @@ The dataset does not directly include user labels. To classify sessions, we deri
   We have engineering 4 new columns:
   
   **a. TimeOfDay**: from the "Charging Start Time" column  
-        Morning: 6-9  
-        Office Hour: 9-17  
-        Evening: 17-22  
-        Night: 22-24  
-        Deep Night:24-6
+       - Morning: 6-9  
+       - Office Hour: 9-17  
+       - Evening: 17-22  
+       - Night: 22-24  
+       - Deep Night:24-6
   
   **b. TimeOfDay**: from the "Charging Start Time" column  
         Weekday: Monday-Friday  
