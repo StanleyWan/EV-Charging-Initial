@@ -44,7 +44,7 @@ The dataset does not directly include user labels. To classify sessions, we deri
 
 - **Payment Method** further reflects these incentives, as Subscription users behave differently from Card payers.
 
-  ## 2. Data Processing and Engineering Features
+## 2. Data Processing and Engineering Features
   We have engineering 4 new columns:
   
   **a. TimeOfDay**: from the "Charging Start Time" column  
@@ -67,7 +67,7 @@ The dataset does not directly include user labels. To classify sessions, we deri
   
   **d. Cost_per_kWh** = Cost/Energy Delivered
 
-  ## 3. Modeling
+## 3. Modeling
   ### We are using the following approach:  
 - **Algorithm:** Logistic Regression (OvR, default hyperparameters).  
 - **Preprocessing:**  
