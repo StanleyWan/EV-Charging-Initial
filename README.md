@@ -32,5 +32,11 @@ The dataset does not directly include user labels. To classify sessions, we deri
 - `> 60%` → **Long-Distance Traveler**  
 
 ### Observations from Early Analysis  
-- **Cost is not proportional to kWh delivered**, due to discounts, subscriptions, and free-charging incentives. This makes cost a proxy for **package plan influence** rather than a direct measure of consumption.  
+- **There are no missing data**
+- **Cost is not proportional to kWh delivered**, due to discounts, subscriptions, and free-charging incentives. This makes cost a proxy for **package plan influence** rather than a direct measure of consumption.
+  The following is the graph to demonstrate the correlationship between the cost and Energy Delivered by Chargin Station Type.  It indicates that even they are correlated, the variance is large. It proves that pricing plans/packages distort the cost relationship.
+  <p align="center">
+  <img src="https://raw.githubusercontent.com/StanleyWan/CarPrice/main/images/odometer_distributions_bar.png" width="800"/><br>
+  <em>Figure: Odometer Value Distribution</em>
+</p>
 - **Payment Method** further reflects these incentives, as Subscription users behave differently from Card payers.  
