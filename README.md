@@ -64,4 +64,12 @@ The dataset does not directly include user labels. To classify sessions, we deri
   - Long-Distance: soc >= 60
   
   **d. Cost_per_kWh** = Cost/Energy Delivered
+
+  ## 3. Modeling Approach  
+- **Algorithm:** Logistic Regression (OvR, default hyperparameters).  
+- **Preprocessing:**  
+  - Numeric → median imputation + standard scaling  
+  - Categorical → most frequent imputation + one-hot encoding  
+- **Train/Test split:** stratified 80/20  
+  
   
