@@ -39,4 +39,5 @@ The dataset does not directly include user labels. To classify sessions, we deri
   <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging-Initial/main/images/cost%20vs%20energy.png" width="800"/><br>
   <em>Figure: Correlationship between Cost and Energy Delivered by Charging Station Type</em>
 </p>  
+
 - **Payment Method** further reflects these incentives, as Subscription users behave differently from Card payers.  
