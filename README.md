@@ -86,4 +86,12 @@ We got the Score Table as follows:
 
 **Quick Summary → Accuracy: 0.850 | Macro-F1: 0.812**
   
-  
+The result show:
+- Accuracy is solid.
+- Macro-F1 shows some imbalance (Casual users are weaker).
+
+## 4. Evaluation
+  <p align="center">
+  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging-Initial/main/images/cost%20vs%20energy.png" width="800"/><br>
+  <em>Figure: Correlationship between Cost and Energy Delivered by Charging Station Type</em>
+</p>  
