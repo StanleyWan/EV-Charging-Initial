@@ -95,4 +95,4 @@ The result show:
   <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging-Initial/main/images/initial_confusion_logreg_costs.png" width="800"/><br>
   <em>Figure:          Confusion Matrix -- Logistic Regression</em>
 </p>  
-https://github.com/StanleyWan/EV-Charging-Initial/blob/main/images/initial_confusion_logreg_costs.png
+
