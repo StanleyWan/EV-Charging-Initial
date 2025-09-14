@@ -98,3 +98,10 @@ The result show:
   <em>Figure:          Confusion Matrix -- Logistic Regression</em>
 </p>  
 
+Result of the Confusion Matrix:
+- Accuracy for the Casual Driver = 14/22=64%
+- Accuracy for the Commuters = 54/66=82%
+- Accuracy for the Long Distance ravelers = 69/72=96%
+- 
+The model is very strong for Long-Distance (96%) and Commuters (82%). It struggles more with Casual Drivers (64%), often confusing them with Commuters.
+
