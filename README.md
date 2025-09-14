@@ -40,4 +40,24 @@ The dataset does not directly include user labels. To classify sessions, we deri
   <em>Figure: Correlationship between Cost and Energy Delivered by Charging Station Type</em>
 </p>  
 
-- **Payment Method** further reflects these incentives, as Subscription users behave differently from Card payers.  
+- **Payment Method** further reflects these incentives, as Subscription users behave differently from Card payers.
+
+  ## 2. Data Processing and Engineering Features
+  We have engineering 4 new columns:
+  a. TimeOfDay: from the "Charging Start Time" column
+      Morning: 6-9
+      Office Hour: 9-17
+      Evening: 17-22
+      Night: 22-24
+      Deep Night:24-6
+  b. TimeOfDay: from the "Charging Start Time" column
+      Weekday: Monday-Friday
+      Weekend: Saturday-Sunday
+  
+  We define SOC as (energy deliverd/battery capacity)*100
+
+  c. UserType:
+     Causal: soc < 20
+     Commuter: in the range of 20-60 of soc
+     Long-Distance: soc >= 60
+  d. Cost_per_kWh = Cost/Energy Delivered
