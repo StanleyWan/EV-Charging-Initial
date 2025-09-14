@@ -53,15 +53,15 @@ The dataset does not directly include user labels. To classify sessions, we deri
   - Deep Night:24-6
   
   **b. TimeOfDay**: from the "Charging Start Time" column  
-        Weekday: Monday-Friday  
-        Weekend: Saturday-Sunday  
+  - Weekday: Monday-Friday  
+  - Weekend: Saturday-Sunday  
   
   We define SOC as (energy deliverd/battery capacity)*100  
 
   **c. UserType**:  
-       Causal: soc < 20  
-       Commuter: in the range of 20-60 of soc  
-       Long-Distance: soc >= 60
+  - Causal: soc < 20  
+  - Commuter: in the range of 20-60 of soc  
+  - Long-Distance: soc >= 60
   
   **d. Cost_per_kWh** = Cost/Energy Delivered
   
