@@ -65,7 +65,8 @@ The dataset does not directly include user labels. To classify sessions, we deri
   
   **d. Cost_per_kWh** = Cost/Energy Delivered
 
-  ## 3. Modeling Approach  
+  ## 3. Modeling
+  ### We are using the following approach:  
 - **Algorithm:** Logistic Regression (OvR, default hyperparameters).  
 - **Preprocessing:**  
   - Numeric → median imputation + standard scaling  
