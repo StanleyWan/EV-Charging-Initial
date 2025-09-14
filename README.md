@@ -114,9 +114,9 @@ The following is the ROC Curves after the data Modeling
   <em>Figure:          ROC Curves -- Logistic Regression</em>
 </p>
 
-ROC AUC values for each class are high Casual = 0.99
-Commuter = 0.94
-Long-Distance = 0.986
-It show strong separation on the classes
+ROC AUC values for each class are high Casual = 0.99  
+Commuter = 0.94  
+Long-Distance = 0.986  
+It show strong separation on the classes  
 
 
