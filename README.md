@@ -92,6 +92,7 @@ The result show:
 
 ## 4. Evaluation
   <p align="center">
-  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging-Initial/main/images/cost%20vs%20energy.png" width="800"/><br>
-  <em>Figure: Correlationship between Cost and Energy Delivered by Charging Station Type</em>
+  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging-Initial/main/images/initial_confusion_logreg_costs.png" width="800"/><br>
+  <em>Figure: Confusion Matrix -- Logistic Regression</em>
 </p>  
+https://github.com/StanleyWan/EV-Charging-Initial/blob/main/images/initial_confusion_logreg_costs.png
