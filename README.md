@@ -71,6 +71,19 @@ The dataset does not directly include user labels. To classify sessions, we deri
 - **Preprocessing:**  
   - Numeric → median imputation + standard scaling  
   - Categorical → most frequent imputation + one-hot encoding  
-- **Train/Test split:** stratified 80/20  
+- **Train/Test split:** stratified 80/20
+
+We got the Score Table as follows:
+
+| Class          | Precision | Recall | F1-Score | Support |
+|----------------|-----------|--------|----------|---------|
+| Casual         | 0.87      | 0.59   | 0.70     | 22      |
+| Commuter       | 0.82      | 0.82   | 0.82     | 66      |
+| Long-Distance  | 0.87      | 0.96   | 0.91     | 72      |
+| **Accuracy**   |           |        | **0.85** | 160     |
+| **Macro Avg**  | 0.85      | 0.79   | 0.81     | 160     |
+| **Weighted Avg** | 0.85    | 0.85   | 0.85     | 160     |
+
+**Quick Summary → Accuracy: 0.850 | Macro-F1: 0.812**
   
   
