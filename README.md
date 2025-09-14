@@ -110,8 +110,7 @@ The model is very strong for Long-Distance (96%) and Commuters (82%). It struggl
 
 The following is the ROC Curves after the data Modeling  
 <p align="center">
-  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging-Initial/main/images/initial_confusion_logreg_costs.png" width="800"/><br>
-  <em>Figure:          Confusion Matrix -- Logistic Regression</em>
+  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging-Initial/main/images/initial_roc_logreg_costs.png" width="800"/><br>
+  <em>Figure:          ROC Curves -- Logistic Regression</em>
 </p>
-
 
