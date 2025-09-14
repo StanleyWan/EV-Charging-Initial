@@ -6,10 +6,10 @@ The research problem is: “Can we predict whether an EV charging session repres
 
 As an initial report, the emphasis is on the technical process of building and evaluating predictive models. Broader business insights and non-technical discussions will be expanded in the Final Report.
 
-Here is the link of the Jupyter Notebook: [ev_charging_V1.ipynb](https://github.com/StanleyWan/EV-Charging-Initial/blob/main/ev_charging_V1.ipynb )with visualizations and probability distributions. It is developed under Google's Colab.
-https://github.com/StanleyWan/EV-Charging-Initial/blob/main/ev_charging_V1.ipynb
+Here is the link of the Jupyter Notebook: [ev_charging_V1.ipynb](https://github.com/StanleyWan/EV-Charging-Initial/blob/main/ev_charging_V1.ipynb ) with visualizations and probability distributions. It is developed under Google's Colab.
+https://github.com/StanleyWan/EV-Charging-Initial/blob/main/data/Global_EV_Charging_Behavior_2024.csv
 ## 1. Data Understanding
-The dataset used in this project is [Global_EV_Charging_Behavior_2024](https://www.kaggle.com/datasets/atharvasoundankar/global-ev-charging-behavior-2024) downloaded from Kaggle.  It contains 800 rows and 18 Columns, providing a comprehesive and realistic view of EV charging usage and trends across different regions worldwide. 
+The dataset used in this project is [Global_EV_Charging_Behavior_2024.csv](https://github.com/StanleyWan/EV-Charging-Initial/blob/main/data/Global_EV_Charging_Behavior_2024.csv) downloaded from Kaggle.  It contains 800 rows and 18 Columns, providing a comprehesive and realistic view of EV charging usage and trends across different regions worldwide. 
 
 The Dataset was chosen to replace the previoius proposed dataset[electric-vehicle-charging-patterns](https://www.kaggle.com/datasets/valakhorasani/electric-vehicle-charging-patterns). After a deeper analysis, the earlier dataset was found to be less realistic, making Global_EV_Charging_Behavior2024 a more suitable choice for the capstone project.
 
