@@ -30,13 +30,13 @@ The dataset does not directly include user labels. To classify sessions, we deri
 - `< 20%` → **Casual Driver**  
 - `20–60%` → **Commuter**  
 - `> 60%` → **Long-Distance Traveler**  
-
+https://github.com/StanleyWan/EV-Charging-Initial/blob/main/images/cost%20vs%20energy.png
 ### Observations from Early Analysis  
 - **There are no missing data**
 - **Cost is not proportional to kWh delivered**, due to discounts, subscriptions, and free-charging incentives. This makes cost a proxy for **package plan influence** rather than a direct measure of consumption.
   The following is the graph to demonstrate the correlationship between the cost and Energy Delivered by Chargin Station Type.  It indicates that even they are correlated, the variance is large. It proves that pricing plans/packages distort the cost relationship.
   <p align="center">
-  <img src="https://raw.githubusercontent.com/StanleyWan/CarPrice/main/images/odometer_distributions_bar.png" width="800"/><br>
-  <em>Figure: Odometer Value Distribution</em>
+  <img src="https://raw.githubusercontent.com/StanleyWan/EV-Charging-Initial/main/images/cost%20vs%20energy.png" width="800"/><br>
+  <em>Figure: Correlationship between Cost and Energy Delivered by Charging Station Type</em>
 </p>
 - **Payment Method** further reflects these incentives, as Subscription users behave differently from Card payers.  
