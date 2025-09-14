@@ -47,35 +47,20 @@ The dataset does not directly include user labels. To classify sessions, we deri
 ## 2. Data Processing and Engineering Features
   We have engineering 4 new columns:
   
-  **a. TimeOfDay**: from the "Charging Start Time" column  
-  - Morning: 6-9  
-  - Office Hour: 9-17  
-  - Evening: 17-22  
-  - Night: 22-24  
-  - Deep Night:24-6
-  
-  **b. TimeOfDay**: from the "Charging Start Time" column  
-  - Weekday: Monday-Friday  
-  - Weekend: Saturday-Sunday  
-  
-  We define SOC as (energy deliverd/battery capacity)*100  
-
-  **c. UserType**:  
-  - Causal: soc < 20  
-  - Commuter: in the range of 20-60 of soc  
-  - Long-Distance: soc >= 60
-  
-  **d. Cost_per_kWh** = Cost/Energy Delivered
+  **a. TimeOfDay**:  binned into Morning, Office Hours, Evening, Night, Deep Night.   
+  **b. Daytype**: Weekday vs. Weekend.
+  **c. UserType**:  Derived from SOC % change
+  **d. Cost_per_kWh:** Charging cost divided by energy delivered.
 
 ## 3. Modeling
-  ### We are using the following approach:  
+  ### Baseline Model  
 - **Algorithm:** Logistic Regression (OvR, default hyperparameters).  
 - **Preprocessing:**  
   - Numeric → median imputation + standard scaling  
   - Categorical → most frequent imputation + one-hot encoding  
 - **Train/Test split:** stratified 80/20
 
-We got the Score Table as follows:
+**Performance**
 
 | Class          | Precision | Recall | F1-Score | Support |
 |----------------|-----------|--------|----------|---------|
@@ -86,11 +71,9 @@ We got the Score Table as follows:
 | **Macro Avg**  | 0.85      | 0.79   | 0.81     | 160     |
 | **Weighted Avg** | 0.85    | 0.85   | 0.85     | 160     |
 
-**Quick Summary → Accuracy: 0.850 | Macro-F1: 0.812**
-  
-The result show:
-- Accuracy is solid.
-- Macro-F1 shows some imbalance (Casual users are weaker).
+**Summary → Accuracy: 0.850 | Macro-F1: 0.812**  
+- Model is strong for Long-Distance (96%) and Commuter (82%)  
+- Casual Drivers are harder to classify (64%), often misclassified as Commuters.
 
 ## 4. Evaluation  
 
