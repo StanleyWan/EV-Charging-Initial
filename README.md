@@ -6,6 +6,8 @@ The research problem is: “Can we predict whether an EV charging session repres
 
 As an initial report, the emphasis is on the technical process of building and evaluating predictive models. Broader business insights and non-technical discussions will be expanded in the Final Report.
 
+Here is the link of the Jupyter Notebook: Car_Price_V3.ipynb with visualizations and probability distributions. It is developed under Google's Colab.
+
 ## 1. Data Understanding
 The dataset used in this project is [Global_EV_Charging_Behavior_2024](https://www.kaggle.com/datasets/atharvasoundankar/global-ev-charging-behavior-2024) downloaded from Kaggle.  It contains 800 rows and 18 Columns, providing a comprehesive and realistic view of EV charging usage and trends across different regions worldwide. 
 
