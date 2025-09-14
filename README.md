@@ -5,3 +5,30 @@ This is the initial capstone project submitted to fulfill the requirements of th
 The research problem is: “Can we predict whether an EV charging session represents a Casual Driver, Commuter, or Long-Distance Traveler based on charging and driving behaviors, and how can these insights support better charging infrastructure planning and personalized EV services?”
 
 As an initial report, the emphasis is on the technical process of building and evaluating predictive models. Broader business insights and non-technical discussions will be expanded in the Final Report.
+
+##  1. Data Understanding
+The dataset used in this project is Global_EV_Charging_Behavior_2024 downloaded from Kaggle. It contains 800 rows and 18 Columns, providing a comprehesive and realistic view of EV charging usage and trends across different regions worldwide.
+
+The Dataset was chosen to replace the previoius proposed datasetelectric-vehicle-charging-patterns. After a deeper analysis, the earlier dataset was found to be less realistic, making Global_EV_Charging_Behavior2024 a more suitable choice for the capstone project.
+
+Key Characteristics of the Dataset
+Size: ~800 sessions × 16 attributes
+Coverage: Global scope, reflecting diverse EV usage and charging environments
+Granularity: Session-level data (each row corresponds to one charging session)
+Important Columns Used
+Charging Start Time – exact start timestamp, used to derive Time of Day and Day Type (Weekday/Weekend).
+Battery Capacity (kWh) – vehicle’s full battery size, a baseline for calculating State of Charge (SOC) changes.
+Energy Delivered (kWh) – amount of energy provided in the session; used for labeling user type but excluded as a model feature to avoid leakage.
+Charging Cost ($) – session cost, strongly influenced by vendor packages and incentives; retained as a key predictor of behavior.
+Payment Method – categorical variable (Subscription, Card, App) that acts as a proxy for billing structure and package plans.
+Charging Station Type – Level 1 / Level 2 / DC Fast; reflects charging speed and user patience.
+Charging Session Outcome – whether a session was completed, failed, or aborted; noted but excluded since the effect is already reflected in energy delivered.
+Label Creation (User Type)
+The dataset does not directly include user labels. To classify sessions, we derived UserType based on the percentage change in battery SOC during a charging session:
+
+< 20% → Casual Driver
+20–60% → Commuter
+> 60% → Long-Distance Traveler
+Observations from Early Analysis
+Cost is not proportional to kWh delivered, due to discounts, subscriptions, and free-charging incentives. This makes cost a proxy for package plan influence rather than a direct measure of consumption.
+Payment Method further reflects these incentives, as Subscription users behave differently from Card payers.
