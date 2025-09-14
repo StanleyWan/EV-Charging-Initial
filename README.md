@@ -119,4 +119,16 @@ Commuter = 0.94
 Long-Distance = 0.986  
 It show strong separation on the classes  
 
+## 5. Findings  
+- **Cost ($)** is the strongest predictor — not because of energy delivered, but because it captures **vendor package influence**.  
+- **Payment Method** further improves separation, acting as a proxy for whether a session was part of a subscription, card, or app-based plan.  
+- Logistic Regression provides a strong, interpretable baseline.  
+
+---
+
+## 6. Next Steps (for Final Capstone)  
+1. Extend modeling to **Decision Tree, KNN, SVM** with hyperparameter tuning.  
+2. Compare models using Accuracy, Macro-F1, and AUC.  
+3. Provide actionable insights on **infrastructure planning by user type**.  
+
 
